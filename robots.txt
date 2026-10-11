@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# After your first deployment, replace the address below with your real one
+# and remove the leading "#" (see README, "Update the site address").
+# Sitemap: https://USERNAME.github.io/REPOSITORY/sitemap.xml

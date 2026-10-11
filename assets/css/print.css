@@ -1,0 +1,57 @@
+/* ==========================================================================
+   PRINT
+   Makes the CV (and articles) print or "Save as PDF" cleanly.
+   ========================================================================== */
+
+@media print {
+  @page { margin: 16mm 14mm; }
+
+  :root,
+  :root[data-theme="dark"] {
+    --bg: #fff;
+    --surface: #fff;
+    --surface-2: #f3f3f3;
+    --text: #000;
+    --text-muted: #333;
+    --border: #bbb;
+    --border-strong: #888;
+    --accent: #0b3a73;
+    --code-bg: #f3f3f3;
+    --code-text: #000;
+    --tok-comment: #444;
+    --tok-keyword: #000;
+    --tok-string: #000;
+    --tok-number: #000;
+    --tok-fn: #000;
+    --tok-type: #000;
+  }
+
+  html, body { background: #fff !important; color: #000; font-size: 11pt; }
+
+  .site-header,
+  .site-footer,
+  .mobile-nav,
+  .skip-link,
+  .no-print,
+  .toolbar,
+  .toc,
+  .code-copy,
+  .prev-next,
+  .related,
+  .notice,
+  .btn-row,
+  .prose .anchor { display: none !important; }
+
+  .container { max-width: none; padding-inline: 0; }
+  .page { animation: none; }
+
+  .cv { border: 0; padding: 0; }
+  .cv h2, .cv .cv-item, .entry, .figure, .code-block, .table-wrap { break-inside: avoid; }
+  h1, h2, h3 { break-after: avoid; }
+
+  a { color: inherit; text-decoration: none; }
+  .prose a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.85em; color: #333; }
+
+  .code-block pre { white-space: pre-wrap; overflow: visible; }
+  .table-wrap { overflow: visible; }
+}

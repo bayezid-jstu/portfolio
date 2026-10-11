@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Replace https://USERNAME.github.io/REPOSITORY/ with your real address after
+  your first deployment (see README, "Update the site address").
+  Pages inside this site use "#/" addresses, so search engines treat the whole
+  site as one entry point.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://USERNAME.github.io/REPOSITORY/</loc>
+  </url>
+</urlset>

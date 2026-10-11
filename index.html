@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Your Name – Engineering Student Portfolio</title>
+  <meta name="description" content="Portfolio, projects, technical notes and data by an engineering student.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f7f4">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Icons and web-app metadata (all paths are relative, so any repository name works) -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/images/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Link previews (Open Graph / Twitter).
+       AFTER your first deployment, replace https://USERNAME.github.io/REPOSITORY/
+       with your real address (see README, "Update the site address"). -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Engineering Portfolio">
+  <meta property="og:title" content="Your Name – Engineering Student Portfolio">
+  <meta property="og:description" content="Portfolio, projects, technical notes and data by an engineering student.">
+  <meta property="og:url" content="https://USERNAME.github.io/REPOSITORY/">
+  <meta property="og:image" content="https://USERNAME.github.io/REPOSITORY/assets/images/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Engineering portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Your Name – Engineering Student Portfolio">
+  <meta name="twitter:description" content="Portfolio, projects, technical notes and data by an engineering student.">
+
+  <!-- Sets the light/dark theme BEFORE the page paints, so there is no flash. -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = saved === 'dark' || saved === 'light'
+          ? saved
+          : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'dark' ? '#111418' : '#f7f7f4');
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+  <link rel="stylesheet" href="assets/css/print.css">
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div id="site-header"></div>
+  <div id="site-banner"></div>
+
+  <main id="main-content" tabindex="-1">
+    <div id="app" aria-busy="true">
+      <div class="loading" data-boot role="status"><span class="spinner" aria-hidden="true"></span>Loading…</div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <div id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <noscript>
+    <div class="container" style="padding-block: 2rem">
+      <p><strong>This portfolio needs JavaScript.</strong> Please enable JavaScript in your browser to view it.</p>
+    </div>
+  </noscript>
+
+  <!-- Friendly message if the site could not start (for example when the file
+       was opened by double-clicking it instead of through a web server). -->
+  <script>
+    (function () {
+      var app = document.getElementById('app');
+      function fail(text) {
+        if (!app || !app.querySelector('[data-boot]')) return;
+        var box = document.createElement('div');
+        box.className = 'container';
+        box.style.paddingBlock = '3rem';
+        var p1 = document.createElement('p');
+        var strong = document.createElement('strong');
+        strong.textContent = 'The site could not start.';
+        p1.appendChild(strong);
+        var p2 = document.createElement('p');
+        p2.textContent = text;
+        box.appendChild(p1);
+        box.appendChild(p2);
+        app.replaceChildren(box);
+      }
+      if (location.protocol === 'file:') {
+        fail('Browsers block this kind of page when it is opened directly from a folder. Use a local web server (see README, "Preview on your computer") or open the published GitHub Pages address.');
+        return;
+      }
+      setTimeout(function () {
+        fail('Something stopped the page from loading. Check your internet connection and reload. If you are the site owner, open the browser console (F12) to see the error.');
+      }, 8000);
+    })();
+  </script>
+</body>
+</html>

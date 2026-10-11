@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Page not found</title>
+  <meta name="robots" content="noindex">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f7f4">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='8' fill='%23f7f7f4' stroke='%231d4e89' stroke-width='4'/%3E%3Cpath d='M12 36C18 14 24 14 30 34S42 54 52 28' fill='none' stroke='%231d4e89' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <!--
+    This page is shown by GitHub Pages for any address that does not exist.
+    It is deliberately self-contained (no external CSS or scripts) because the
+    folder level of a missing address can be anything, so relative file paths
+    cannot be trusted here.
+
+    User/organisation sites (https://USERNAME.github.io/) : set SITE_BASE = '/'
+    Project sites (https://USERNAME.github.io/REPOSITORY/): leave SITE_BASE = null
+    (it is detected automatically) or set it to '/REPOSITORY/'.
+  -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = saved === 'dark' || saved === 'light' ? saved
+          : (window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <style>
+    :root { --bg:#f7f7f4; --text:#181a1d; --muted:#555b62; --border:#c3c2b9; --accent:#1d4e89; --on-accent:#fff; color-scheme: light; }
+    :root[data-theme="dark"] { --bg:#111418; --text:#ebeae6; --muted:#a4a9b1; --border:#3c434d; --accent:#8bb6e8; --on-accent:#0c1622; color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+    body {
+      margin: 0; min-height: 100vh; min-height: 100dvh; display: grid; place-items: center;
+      padding: 1.5rem max(1.25rem, env(safe-area-inset-right)) 1.5rem max(1.25rem, env(safe-area-inset-left));
+      background: var(--bg); color: var(--text);
+      font: 1rem/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    main { width: 100%; max-width: 34rem; }
+    .code { margin: 0 0 .5rem; color: var(--accent); font-size: clamp(3rem, 14vw, 5rem); font-weight: 700; line-height: 1; letter-spacing: -.04em; }
+    h1 { margin: 0 0 .75rem; font-size: clamp(1.5rem, 5vw, 2rem); line-height: 1.2; }
+    p { margin: 0 0 1.25rem; color: var(--muted); }
+    .row { display: flex; flex-wrap: wrap; gap: .75rem; }
+    a.btn {
+      display: inline-flex; align-items: center; min-height: 2.75rem; padding: .5rem 1.1rem;
+      border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: var(--on-accent);
+      font-weight: 600; text-decoration: none;
+    }
+    a.btn.quiet { background: transparent; color: var(--text); border-color: var(--border); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="code" aria-hidden="true">404</p>
+    <h1>Page not found</h1>
+    <p>The page you are looking for does not exist, or it has moved. Check the address, or start again from the home page.</p>
+    <div class="row">
+      <a class="btn" id="home-link" href="./">Back to the home page</a>
+      <a class="btn quiet" id="projects-link" href="./#/projects">Projects</a>
+      <a class="btn quiet" id="blog-link" href="./#/blog">Blog</a>
+    </div>
+  </main>
+  <script>
+    (function () {
+      var SITE_BASE = null; // see the comment in <head>
+
+      // Works out the folder the site lives in, e.g. "/my-repo/" for
+      // https://user.github.io/my-repo/missing/page
+      function detectBase(hostname, pathname) {
+        if (SITE_BASE) return SITE_BASE;
+        var parts = pathname.split('/').filter(Boolean);
+        return /\.github\.io$/i.test(hostname) && parts.length ? '/' + parts[0] + '/' : '/';
+      }
+      window.__detectBase = detectBase;
+
+      var base = detectBase(location.hostname, location.pathname);
+      document.getElementById('home-link').setAttribute('href', base);
+      document.getElementById('projects-link').setAttribute('href', base + '#/projects');
+      document.getElementById('blog-link').setAttribute('href', base + '#/blog');
+    })();
+  </script>
+</body>
+</html>

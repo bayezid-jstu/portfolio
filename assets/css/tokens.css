@@ -1,0 +1,115 @@
+/* ==========================================================================
+   DESIGN TOKENS
+   Change the look of the whole site from this one file.
+   - To change the accent colour, edit --accent (light) and --accent (dark) below.
+   ========================================================================== */
+
+:root {
+  /* --- Colour: light theme ------------------------------------------- */
+  --bg: #f7f7f4;            /* page background (soft neutral)            */
+  --surface: #ffffff;       /* cards, inputs                              */
+  --surface-2: #efefea;     /* subtle panels, image placeholders          */
+  --text: #181a1d;          /* primary text                               */
+  --text-muted: #555b62;    /* secondary text                             */
+  --border: #dcdbd4;        /* hairlines                                  */
+  --border-strong: #c3c2b9; /* controls, emphasised rules                 */
+  --accent: #1d4e89;        /* links, buttons, active state               */
+  --accent-hover: #153a69;
+  --on-accent: #ffffff;     /* text on accent backgrounds                 */
+  --accent-soft: #e6edf6;   /* quiet accent background                    */
+  --focus: #1d4e89;
+
+  --notice-bg: #f6f1df;
+  --notice-border: #dccd93;
+  --notice-text: #54450f;
+
+  /* Code */
+  --code-bg: #f0efea;
+  --code-text: #23262b;
+  --tok-comment: #626870;
+  --tok-keyword: #7b2d8b;
+  --tok-string: #1b6a3c;
+  --tok-number: #a0420a;
+  --tok-fn: #1d4e89;
+  --tok-type: #8a5a00;
+
+  /* Charts (each series also differs by dash pattern, not colour alone) */
+  --chart-1: #1d4e89;
+  --chart-2: #b2501a;
+  --chart-3: #2b7a58;
+  --grid: #e4e3dc;
+
+  /* --- Typography ----------------------------------------------------- */
+  /* System fonts: instant load, no layout shift, native look on every device. */
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: clamp(1.25rem, 1.12rem + 0.6vw, 1.5rem);
+  --fs-2xl: clamp(1.5rem, 1.25rem + 1.1vw, 2rem);
+  --fs-3xl: clamp(1.85rem, 1.4rem + 2vw, 2.6rem);
+  --fs-hero: clamp(2.15rem, 1.5rem + 3.2vw, 3.4rem);
+
+  /* --- Spacing scale (4px base) --------------------------------------- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4.5rem;
+
+  /* --- Shape & elevation ---------------------------------------------- */
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 10px;
+  --shadow-sm: 0 1px 2px rgb(24 26 29 / 0.06);
+  --shadow-md: 0 6px 20px rgb(24 26 29 / 0.08);
+
+  /* --- Layout --------------------------------------------------------- */
+  --header-h: 3.75rem;
+  --container: 72rem;
+  --measure: 68ch;
+  --gutter: clamp(1rem, 4vw, 2rem);
+}
+
+:root[data-theme="dark"] {
+  --bg: #111418;
+  --surface: #181c21;
+  --surface-2: #1f242b;
+  --text: #ebeae6;
+  --text-muted: #a4a9b1;
+  --border: #2b3139;
+  --border-strong: #3c434d;
+  --accent: #8bb6e8;
+  --accent-hover: #b0cef2;
+  --on-accent: #0c1622;
+  --accent-soft: #1b2838;
+  --focus: #8bb6e8;
+
+  --notice-bg: #2a2614;
+  --notice-border: #5a4f1f;
+  --notice-text: #e9dc9c;
+
+  --code-bg: #1b2027;
+  --code-text: #e4e3df;
+  --tok-comment: #8b929b;
+  --tok-keyword: #d3a2e3;
+  --tok-string: #8fd3a8;
+  --tok-number: #f0a56e;
+  --tok-fn: #8bb6e8;
+  --tok-type: #e6c067;
+
+  --chart-1: #8bb6e8;
+  --chart-2: #f0a56e;
+  --chart-3: #84d1ae;
+  --grid: #272d35;
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 6px 20px rgb(0 0 0 / 0.4);
+}
