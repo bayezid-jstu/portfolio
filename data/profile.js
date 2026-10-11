@@ -10,37 +10,37 @@
 
 export const profile = {
   // --- Identity -------------------------------------------------------------
-  name: 'Your Name',
+  name: 'Md. Ashraf Siddikey Bayezid',
   headline: 'Engineering Student | Aspiring Engineer | Technical Enthusiast',
-  discipline: 'Your engineering discipline', // e.g. 'Electrical and Electronic Engineering'
-  institution: '', // e.g. 'University of Example'  (leave '' to hide)
+  discipline: 'Electrical and Electronic Engineering', 
+  institution: 'Jamalpur Science & Technology University', 
   location: '', // e.g. 'City, Country'          (leave '' to hide)
 
   // One or two sentences shown on the home page.
   intro:
-    'Write two or three sentences here: what you study, what you enjoy building, and what you are looking for (internships, research, collaboration).',
+    'I am an Electrical and Electronic Engineering (EEE) student with a strong interest in electrical machines, electronics, and practical engineering applications. I enjoy exploring how things work, designing DIY projects, and using technology and programming to solve real-world problems. I am eager to gain hands-on experience, explore research opportunities, and collaborate with others on innovative engineering projects that turn ideas into reality.',
 
   // Longer biography for the About page. Each string is one paragraph.
   biography: [
-    'Replace this with a short story of how you became interested in engineering and what you are working on now.',
-    'Add a second paragraph about your academic focus, the kinds of problems you like to solve, and where you want to go next.',
+    'My journey into engineering began with a simple curiosity about how things work and how ideas can be transformed into real-world solutions. As an EEE student, I became fascinated by electrical machines, electronics, and the science behind everyday technology. Today, I’m exploring practical engineering projects, learning new technical skills, and building a foundation to turn my curiosity into meaningful innovations.',
+    'My academic focus is on electrical and electronic engineering, particularly electrical machines, circuit fundamentals, and practical applications of engineering principles. I enjoy solving problems that require logical thinking, understanding how systems work, and turning theoretical concepts into functional solutions. Moving forward, I aim to deepen my technical expertise, develop innovative projects, and pursue opportunities in research, internships, and collaborative engineering work that challenge me to grow as an engineer.',
   ],
 
   // --- Photo ----------------------------------------------------------------
   // Put your photo in assets/images/ and write its path, e.g. 'assets/images/photo.jpg'.
   // Leave '' to show a neat monogram placeholder instead.
   photo: '',
-  photoAlt: 'Portrait of Your Name',
+  photoAlt: 'Ashraf Siddikey',
 
   // --- Contact & links ------------------------------------------------------
   // Leave email '' until you want it public. When empty, the contact form
   // is hidden and no email is shown anywhere.
-  email: '',
+  email: 'siddikeyashraf10@gmail.com',
 
   // Add or remove links freely. 'icon' can be: github, linkedin, mail, link.
   // Links with an empty url are not shown.
   links: [
-    { label: 'GitHub', url: '', icon: 'github' }, // e.g. 'https://github.com/your-username'
+    { label: 'GitHub', url: 'https://bayezid-jstu.github.io/portfolio/', icon: 'github' }, // e.g. 'https://github.com/your-username'
     { label: 'LinkedIn', url: '', icon: 'linkedin' }, // e.g. 'https://www.linkedin.com/in/your-name/'
     // { label: 'Google Scholar', url: 'https://scholar.google.com/...', icon: 'link' },
   ],
