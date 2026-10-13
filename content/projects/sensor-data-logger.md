@@ -1,6 +1,6 @@
 ---
 title: Sensor data logger
-summary: A sample project outline for a microcontroller that samples an analogue sensor once per second and prints the readings as CSV.
+summary: summary: A microcontroller-based data logger that samples an analogue sensor once per second and outputs readings as CSV.
 category: software
 tech: [Microcontroller, ADC, Arduino C++, CSV]
 tags: [data-logging, embedded, adc]
