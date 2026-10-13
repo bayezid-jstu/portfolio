@@ -4,9 +4,9 @@ summary: A sample project outline for a microcontroller that samples an analogue
 category: software
 tech: [Microcontroller, ADC, Arduino C++, CSV]
 tags: [data-logging, embedded, adc]
-status: Sample (planned)
+
 date: 2026-07-10
-sample: true
+
 cover: assets/images/projects/sensor-logger.svg
 coverAlt: Block diagram showing a sensor, a microcontroller, a CSV file and an analysis step connected by arrows.
 links:
