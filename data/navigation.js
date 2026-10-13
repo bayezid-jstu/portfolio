@@ -8,7 +8,7 @@
 // ============================================================================
 
 export const navigation = [
-  { label: 'Home', href: '#/', header: false },
+  { label: 'Home', href: '#/', header: true},
   { label: 'About', href: '#/about', header: true },
   { label: 'Projects', href: '#/projects', header: true },
   { label: 'Skills', href: '#/skills', header: true },
