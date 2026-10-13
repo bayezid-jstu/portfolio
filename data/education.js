@@ -11,10 +11,19 @@ export const education = {
   // Degrees and programmes
   institutions: [
     {
-      'Md. Ashraf Siddikey Bayezid': true,
       institution: 'Jamalpur Science & Technology University',
       program: 'Electrical and Electronic Engineering',
-      period: '2024 – 2025 session',
+      period: '2024 – Present', // Updated session/period formatting
+    },
+    {
+      institution: 'Gurudayal Govt. College',
+      program: 'Higher Secondary Certificate (HSC)',
+      period: '', // Add years if desired, or leave blank
+    },
+    {
+      institution: "Kishoreganj Govt. Boys' High School",
+      program: 'Secondary School Certificate (SSC)',
+      period: '', // Add years if desired, or leave blank
     }
   ],
 
