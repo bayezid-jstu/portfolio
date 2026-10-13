@@ -11,12 +11,13 @@ export const education = {
   // Degrees and programmes
   institutions: [
     {
-      Md. Ashraf Siddikey Bayezid: true,
+      'Md. Ashraf Siddikey Bayezid': true,
       institution: 'Jamalpur Science & Technology University',
       program: 'Electrical and Electronic Engineering',
       period: '2024 – 2025 session',
     }
-  ],
+  ]
+};
 
   // Projects done for classes (the main projects live in content/projects/)
   academicProjects: [],
