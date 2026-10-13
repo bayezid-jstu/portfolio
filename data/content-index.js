@@ -12,7 +12,6 @@
 // ============================================================================
 
 export const posts = [
-  'welcome-and-how-to-write-posts.md',
   'rc-time-constant.md',
   'reading-a-datasheet.md',
 ];
