@@ -1,5 +1,5 @@
 // ============================================================================
-// YOUR PROFILE  (edit this file to change your name, bio, links and interests)
+// YOUR PROFILE (edit this file to change your name, bio, links and interests)
 //
 // Rules of thumb:
 //  - Text goes between quotes: 'like this'.
@@ -12,9 +12,9 @@ export const profile = {
   // --- Identity -------------------------------------------------------------
   name: 'Md. Ashraf Siddikey Bayezid',
   headline: 'Engineering Student | Aspiring Engineer | Technical Enthusiast',
-  discipline: 'Electrical and Electronic Engineering', 
-  institution: 'Jamalpur Science & Technology University', 
-  location: 'Jamalpur, Bangladesh', // e.g. 'City, Country'          (leave '' to hide)
+  discipline: 'Electrical and Electronic Engineering',
+  institution: 'Jamalpur Science & Technology University',
+  location: 'Jamalpur, Bangladesh',
 
   // One or two sentences shown on the home page.
   intro:
@@ -27,50 +27,37 @@ export const profile = {
   ],
 
   // --- Photo ----------------------------------------------------------------
-  // Put your photo in assets/images/ and write its path, e.g. 'assets/images/photo.jpg'.
-  // Leave '' to show a neat monogram placeholder instead.
   photo: 'assets/images/IMG_20261010_001047.png',
-  photoAlt: 'Ashraf Siddikey',
+  photoAlt: 'Md. Ashraf Siddikey Bayezid',
 
   // --- Contact & links ------------------------------------------------------
-  // Leave email '' until you want it public. When empty, the contact form
-  // is hidden and no email is shown anywhere.
   email: 'siddikeyashraf10@gmail.com',
 
-  // Add or remove links freely. 'icon' can be: github, linkedin, mail, link.
-  // Links with an empty url are not shown.
+  // Links with an empty url are not shown on the page.
   links: [
-    { label: 'GitHub', url: 'https://bayezid-jstu.github.io/portfolio/', icon: 'github' }, // e.g. 'https://github.com/your-username'
-    { label: 'LinkedIn', url: '', icon: 'linkedin' }, // e.g. 'https://www.linkedin.com/in/your-name/'
-    // { label: 'Google Scholar', url: 'https://scholar.google.com/...', icon: 'link' },
+    { label: 'GitHub', url: 'https://github.com/bayezid-jstu', icon: 'github' },
+    { label: 'LinkedIn', url: '', icon: 'linkedin' },
   ],
 
   // --- CV -------------------------------------------------------------------
-  // 1. Put your CV PDF in the files/ folder (for example files/cv.pdf).
-  // 2. Write its path below: cvPdf: 'files/cv.pdf'
-  // While this is '' the CV page offers "Print or save as PDF" instead.
   cvPdf: '',
 
   // --- Optional contact form ------------------------------------------------
-  // GitHub Pages cannot receive form submissions by itself.
-  //  - Leave formAction '' : the form opens the visitor's email app (needs `email` above).
-  //  - Or paste the URL from a free form service (for example Formspree or
-  //    Web3Forms) to receive messages in your inbox. See README, "Contact form".
   formAction: '',
 
   // --- Home page ------------------------------------------------------------
   interests: [
-    { name: 'Embedded systems'},
-    { name: 'Signals and circuits'},
-    { name: 'Data analysis'},
-    { name: 'Renewable energy'},
+    { name: 'Embedded systems' },
+    { name: 'Signals and circuits' },
+    { name: 'Data analysis' },
+    { name: 'Renewable energy' },
   ],
 
   // --- About page -----------------------------------------------------------
-  currentlyLearning: ['Signals and Circuits'],
-  goals: ['Replace with an academic goal', 'To turn theoritical knowledge into practical ideas'],
-  professionalInterests: ['Renwable Energy Sources'],
+  currentlyLearning: ['Signals and Circuits', 'Electrical Machines'],
+  goals: ['To turn theoretical knowledge into practical engineering solutions'],
+  professionalInterests: ['Renewable Energy Sources', 'Power Systems'],
 };
 
 // Used to decide whether structured data (for search engines) is accurate.
-export const PLACEHOLDER_NAME = 'Md. Ashraf Siddikey Bayezid';
+export const PLACEHOLDER_NAME = 'Your Name';
