@@ -60,7 +60,7 @@ export const profile = {
 
   // --- Home page ------------------------------------------------------------
   interests: [
-    { name: 'Embedded systems', description: 'Replace with a topic you genuinely care about and one line on why.' },
+    { name: 'Embedded systems'},
     { name: 'Signals and circuits', description: 'Edit, add or remove these entries (keep 4 to 6 for a tidy layout).' },
     { name: 'Data analysis', description: 'Each entry has a name and a short description.' },
     { name: 'Renewable energy', description: 'Set interests: [] (an empty list) to hide this section.' },
