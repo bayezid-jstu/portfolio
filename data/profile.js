@@ -61,16 +61,16 @@ export const profile = {
   // --- Home page ------------------------------------------------------------
   interests: [
     { name: 'Embedded systems'},
-    { name: 'Signals and circuits', description: 'Edit, add or remove these entries (keep 4 to 6 for a tidy layout).' },
-    { name: 'Data analysis', description: 'Each entry has a name and a short description.' },
-    { name: 'Renewable energy', description: 'Set interests: [] (an empty list) to hide this section.' },
+    { name: 'Signals and circuits'},
+    { name: 'Data analysis'},
+    { name: 'Renewable energy'},
   ],
 
   // --- About page -----------------------------------------------------------
-  currentlyLearning: ['Replace with something you are learning right now'],
-  goals: ['Replace with an academic goal', 'Replace with a personal or professional goal'],
-  professionalInterests: ['Replace with the kind of roles or research you are interested in'],
+  currentlyLearning: ['Signals and Circuits'],
+  goals: ['Replace with an academic goal', 'To turn theoritical knowledge into practical ideas'],
+  professionalInterests: ['Renwable Energy Sources'],
 };
 
 // Used to decide whether structured data (for search engines) is accurate.
-export const PLACEHOLDER_NAME = 'Your Name';
+export const PLACEHOLDER_NAME = 'Md. Ashraf Siddikey Bayezid';
