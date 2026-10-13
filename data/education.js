@@ -9,8 +9,6 @@ export const education = {
       institution: 'Jamalpur Science & Technology University',
       program: 'B.Sc. in Electrical and Electronic Engineering (EEE)',
       period: '2024 – Present',
-      description: 'Focusing on electrical machines, circuit fundamentals, and practical engineering applications.',
-    },
     {
       institution: 'Gurudayal Govt. College',
       program: 'Higher Secondary Certificate (HSC) - Science',
