@@ -11,12 +11,10 @@ export const education = {
   // Degrees and programmes
   institutions: [
     {
-      placeholder: true,
-      institution: 'Your University',
-      program: 'Your degree, e.g. BSc in Your Engineering Discipline',
-      period: '20XX – 20XX',
-      description: 'Add a sentence about your focus area. Remove this line if you do not need it.',
-      coursework: [], // e.g. ['Circuit Analysis', 'Signals and Systems']
+      Md. Ashraf Siddikey Bayezid: true,
+      institution: 'Jamalpur Science & Technology University',
+      program: 'Electrical and Electronic Engineering',
+      period: '2024 – 2025 session',
     },
   ],
 
