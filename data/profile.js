@@ -59,5 +59,5 @@ export const profile = {
   professionalInterests: ['Renewable Energy Sources', 'Power Systems'],
 };
 
-// Used to decide whether structured data (for search engines) is accurate.
+// CRITICAL: Keep this as 'Your Name' so the template knows you've updated your profile name above.
 export const PLACEHOLDER_NAME = 'Your Name';
