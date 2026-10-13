@@ -13,7 +13,7 @@ export const site = {
   // While this is true, a thin banner and "Sample" badges tell visitors that
   // placeholder content is still on the site.
   // >>> Set to false when you have replaced the sample content with your own. <<<
-  showSampleNotices: true,
+  showSampleNotices: false,
 
   // Categories for projects. "id" is what you write in a project file
   // (category: electronics). Add, rename or delete freely.
