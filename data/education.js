@@ -16,8 +16,7 @@ export const education = {
       program: 'Electrical and Electronic Engineering',
       period: '2024 – 2025 session',
     }
-  ]
-};
+  ],
 
   // Projects done for classes (the main projects live in content/projects/)
   academicProjects: [],
