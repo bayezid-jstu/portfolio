@@ -4,10 +4,10 @@ summary: A sample case study that analyses a first-order RC low-pass filter, fro
 category: electronics
 tech: [Passive components, Frequency response, Bode plot]
 tags: [rc-circuits, filters, electronics]
-status: Sample
+
 date: 2026-08-15
 featured: true
-sample: true
+
 cover: assets/images/projects/rc-filter.svg
 coverAlt: Circuit diagram of a resistor in series with a capacitor to ground; the output is taken across the capacitor.
 links:
