@@ -11,7 +11,7 @@ export const navigation = [
   { label: 'Home', href: '#/', header: false },
   { label: 'About', href: '#/about', header: true },
   { label: 'Projects', href: '#/projects', header: true },
-  { label: 'Blog', href: '#/blog', header: true },
+  { label: 'Blog', href: '#/blog', header: false },
   { label: 'Data', href: '#/data', header: true },
   { label: 'Skills', href: '#/skills', header: true },
   { label: 'Education', href: '#/education', header: true },
