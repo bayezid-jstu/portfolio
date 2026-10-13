@@ -1,14 +1,5 @@
 // ============================================================================
-// SKILLS  (edit this file to change the Skills page and the CV)
-//
-// Instead of percentage bars (which suggest precision nobody can measure),
-// each skill has a plain-language "level" that you can back up with a project:
-//   'Learning'          I am studying it now
-//   'Coursework'        I have used it in classes or labs
-//   'Used in projects'  I have used it in a project I can show
-//   'Regular use'       I use it often and am comfortable without help
-//
-// The entries below are SAMPLES. Replace them with your own and delete the rest.
+// SKILLS (edit this file to change the Skills page and the CV)
 // ============================================================================
 
 export const skillLevels = [
@@ -22,55 +13,33 @@ export const skills = [
   {
     group: 'Programming languages',
     description: 'Languages for scripting, analysis and embedded work.',
-    sample: true,
     items: [
-      { name: 'Python', level: 'Used in projects', note: 'Sample entry: replace with what you actually use it for.' },
-      { name: 'C / C++', level: 'Coursework', note: 'Sample entry.' },
-      { name: 'MATLAB', level: 'Learning', note: 'Sample entry.' },
+      { name: 'MATLAB', level: 'Coursework', note: 'Used for mathematical modeling and engineering calculations.' },
+      { name: 'C / C++', level: 'Coursework', note: 'Used for foundational programming and microcontroller logic.' },
+      { name: 'Python', level: 'Used in projects', note: 'Used for data analysis and general scripting.' },
     ],
   },
   {
     group: 'Engineering software',
-    description: 'CAD, circuit and engineering calculation tools.',
-    sample: true,
+    description: 'Circuit and engineering calculation tools.',
     items: [
-      { name: 'Circuit simulator', level: 'Coursework', note: 'Replace with the tool you use (for example LTspice, Multisim, Proteus).' },
-      { name: 'CAD package', level: 'Learning', note: 'Replace with your CAD tool.' },
-    ],
-  },
-  {
-    group: 'Design and simulation',
-    description: 'Modelling a system before building it.',
-    sample: true,
-    items: [
-      { name: 'Block-diagram simulation', level: 'Learning', note: 'Sample entry.' },
+      { name: 'LTspice / Proteus', level: 'Coursework', note: 'Used for circuit simulation and schematic capture.' },
     ],
   },
   {
     group: 'Laboratory and practical skills',
-    description: 'Hands-on work with real hardware.',
-    sample: true,
+    description: 'Hands-on work with real hardware and measurement equipment.',
     items: [
-      { name: 'Oscilloscope and multimeter', level: 'Coursework', note: 'Sample entry.' },
-      { name: 'Soldering', level: 'Learning', note: 'Sample entry.' },
-    ],
-  },
-  {
-    group: 'Data analysis',
-    description: 'Cleaning, analysing and presenting data.',
-    sample: true,
-    items: [
-      { name: 'Spreadsheets', level: 'Regular use', note: 'Sample entry.' },
-      { name: 'Plotting and statistics', level: 'Used in projects', note: 'Sample entry.' },
+      { name: 'Oscilloscope and Multimeter', level: 'Coursework', note: 'Used in electrical labs for signal and component testing.' },
+      { name: 'Breadboard Prototyping & Soldering', level: 'Coursework', note: 'Building and testing physical electronic circuits.' },
     ],
   },
   {
     group: 'Documentation and communication',
     description: 'Explaining technical work clearly.',
-    sample: true,
     items: [
-      { name: 'Technical writing', level: 'Coursework', note: 'Sample entry.' },
-      { name: 'Git and GitHub', level: 'Learning', note: 'Sample entry.' },
+      { name: 'LaTeX & CircuiTikZ', level: 'Regular use', note: 'Used for formatting lab reports, equations, and circuit diagrams.' },
+      { name: 'Git and GitHub', level: 'Used in projects', note: 'Used for version control and hosting web projects.' },
     ],
   },
 ];
