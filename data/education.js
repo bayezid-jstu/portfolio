@@ -1,5 +1,5 @@
 // ============================================================================
-// EDUCATION & ACHIEVEMENTS  (edit this file to change the Education page and CV)
+// EDUCATION & ACHIEVEMENTS (edit this file to change the Education page and CV)
 //
 // Every list is OPTIONAL. An empty list ( [] ) hides that whole section, so
 // only add things that are true. Never publish credentials you do not have.
