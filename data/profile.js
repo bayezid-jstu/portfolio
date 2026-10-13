@@ -14,7 +14,7 @@ export const profile = {
   headline: 'Engineering Student | Aspiring Engineer | Technical Enthusiast',
   discipline: 'Electrical and Electronic Engineering', 
   institution: 'Jamalpur Science & Technology University', 
-  location: '', // e.g. 'City, Country'          (leave '' to hide)
+  location: 'Jamalpur, Bangladesh', // e.g. 'City, Country'          (leave '' to hide)
 
   // One or two sentences shown on the home page.
   intro:
@@ -29,7 +29,7 @@ export const profile = {
   // --- Photo ----------------------------------------------------------------
   // Put your photo in assets/images/ and write its path, e.g. 'assets/images/photo.jpg'.
   // Leave '' to show a neat monogram placeholder instead.
-  photo: '',
+  photo: 'assets/images/IMG_20261010_001047.png',
   photoAlt: 'Ashraf Siddikey',
 
   // --- Contact & links ------------------------------------------------------
